@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Avenir', sans-serif;
+}
+
+body {
+    height: 2189px
+}
+
+nav {
+    width: 319px;
+    height: 1080px;
+    background-color: #222222;
+    padding: 50px 30px 105px 30px;
+    position: fixed;
+    overflow: auto;
+}
+
+.burger_section{
+    max-height: 30px;
+}
+
+.burger_text {
+    display: inline-block;
+}
+
+.burger_text p {
+    font-weight: 900;
+    font-size: 24px;
+    text-align: left;
+    color: #fff;
+}
+
+.burger_text span {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: left;
+    color: #fff;
+}
+
+.burger {
+    width: 26px;
+    max-height: 11px;
+    background: transparent;
+    border: none;
+    float: right;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.burger div {
+    margin: 4px 0;
+    height: 1px;
+    background: #fff;
+}
+
+.menu {
+    display: block;
+    margin-top: 105px;
+    
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    padding: 18px 30px;
+    position: relative;
+}
+
+.menu a:hover {
+    border-radius: 12px;
+    background: #f28;
+}
+
+.menu_text {
+    display: inline-block;
+    position: absolute;
+    left: 75px;
+    bottom: 22px;
+}
+
+.following {
+    margin-top: 80px;
+    padding-left: 30px;
+}
+
+.following h2 {
+    font-weight: 300;
+    font-size: 12px;
+    color: #fff;
+}
+
+.following a {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+
+}
+
+#sajon {
+    margin-top: 31px;
+}
+
+.following span {
+    display: inline-block;
+    margin-bottom: 5px;
+    position: absolute;
+    left: 65px;
+    bottom: 13px;
+}
+
+.more {
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
