@@ -321,7 +321,6 @@ section {
 .cards {
     width: 100%;
     padding-top: 5px;
-
 }
 
 .card_1 {
@@ -335,21 +334,17 @@ section {
 
 .card_1 img {
     width: 289px;
-    height: 210px;
-    
+    height: 210px;  
 }
 
 .card_1 span {
     display: block;
     margin-top: 29px;
     padding-left: 30px;
-
-
     font-weight: 500;
     font-size: 18px;
     text-align: left;
     color: #222;
-
 }
 
 
