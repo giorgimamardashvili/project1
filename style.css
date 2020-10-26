@@ -245,6 +245,7 @@ header {
     position: relative;
     top: -25px;
     cursor: pointer;
+    border: none;
    
     font-weight: 500;
     font-size: 14px;
