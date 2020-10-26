@@ -343,6 +343,13 @@ section {
     display: block;
     margin-top: 29px;
     padding-left: 30px;
+
+
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+    color: #222;
+
 }
 
 
