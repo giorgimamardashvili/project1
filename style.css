@@ -13,20 +13,20 @@ body {
 }
 
 nav {
-    width: 319px;
-    height: 1080px;
+    width: 320px;
+    height: 100vh;
     background-color: #222222;
     padding: 50px 30px 105px 30px;
     position: fixed;
     overflow: auto;
+    z-index: 1;
 }
 
 .burger_section{
     max-height: 30px;
-}
-
-.burger_text {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .burger_text p {
@@ -48,8 +48,6 @@ nav {
     max-height: 11px;
     background: transparent;
     border: none;
-    float: right;
-    margin-top: 7px;
     cursor: pointer;
 }
 
@@ -60,19 +58,19 @@ nav {
 }
 
 .menu {
-    display: block;
-    margin-top: 105px;
-    
+    display: flex;
+    flex-direction: column;
+    margin-top: 105px; 
 }
 
 .menu a {
-    display: block;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
     color: #fff;
     padding: 18px 30px;
-    position: relative;
 }
 
 .menu a:hover {
@@ -81,10 +79,7 @@ nav {
 }
 
 .menu_text {
-    display: inline-block;
-    position: absolute;
-    left: 75px;
-    bottom: 22px;
+    margin-left: 15px;
 }
 
 .following {
@@ -98,27 +93,28 @@ nav {
     color: #fff;
 }
 
+.following_flex {
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
 .following a {
-    display: block;
-    margin-top: 15px;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
     color: #fff;
-    position: relative;
-
-}
-
-#sajon {
-    margin-top: 31px;
 }
 
 .following span {
-    display: inline-block;
-    margin-bottom: 5px;
-    position: absolute;
-    left: 65px;
-    bottom: 13px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 20px;
 }
 
 .more {
@@ -126,18 +122,22 @@ nav {
     font-size: 14px;
     text-align: left;
     color: #fff;
+    margin-top: 20px;
+}
+
+.container {
+    width: 1600px;
+    margin-left: 320px;
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
     height: 116px;
-    margin-left: 319px;
     padding: 30px 91px 30px 20px;
 }
 
-
-
 .search {
-    display: inline-block;
     width: 446px;
     height: 56px;
     position: relative;
@@ -150,14 +150,11 @@ header {
     border-style: none;
     background: #f8f8f8;
     padding: 16px 20px;
-    
-
     font-weight: 500;
     font-size: 14px;
     text-align: left;
     color: #111;
     opacity: 0.5;
-
 }
 
 .search button {
@@ -172,81 +169,54 @@ header {
 }
 
 .right_side {
-    float: right;
-    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    
 }
 
 .pro{
-    position: relative;
-    top: -20px;
     font-weight: 500;
     font-size: 14px;
     color: #f28;
     text-decoration: none; 
-
 }
 
-.imgs {
-    display: inline-block;
-    margin: 0 30px;
+.note {
     position: relative;
-    top: -13px;
+    cursor: pointer;
 }
-
-.imgs_a1 {
-    position: relative;
-}
-
-.imgs_a2 {
-    position: relative;
-}
-
-.img1 {
-    margin-right: 30px;
-    
-}
-
-
 
 .ellipse1 {
     display: none;
     position: absolute;
-    right: 30px;
+    left: 15px;
     top: 0;
-
 }
 
-.imgs_a1:focus > .ellipse1 {
+.icon1:focus > .ellipse1 {
     display: block;
 }
 
 .ellipse2 {
     display: none;
     position: absolute;
-    right: 0;
+    left: 14px;
     top: 0;
 }
 
-.imgs_a2:focus > .ellipse2 {
+.icon2:focus > .ellipse2 {
     display: block;
 }
 
-.right_side a{
-    display: inline-block;
-}
-
 .right_side button {
-    display: inline-block;
     width: 129px;
     height: 56px;
     border-radius: 12px;
     background: #f28;
-    margin-left: 30px;
-    position: relative;
-    top: -25px;
     cursor: pointer;
     border: none;
-   
     font-weight: 500;
     font-size: 14px;
     text-align: center;
@@ -254,39 +224,38 @@ header {
 }
 
 hr {
-    width: 1500px;
+    width: 1490px;
     height: 1px;
     background: #111;
     opacity: 0.05;
-    margin-left: 400px;
+    margin-left: 340px;
 }
 
-section {
-    width: 1300px;
-    margin-left: 500px;
+.choosing {
     margin-top: 40px;
+    padding: 0 180px;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
 }
 
 .filters ul {
-    display: inline-block;
+    display: flex;
     height: 100%;
     text-align: center;
+    list-style: none;
 }
 
-.filters li {
-    display: inline-block;
-}
 .filters li a {
     display: block;
     text-align: center; 
     text-decoration: none;
     padding: 18.25px 25px;
-
-    
     font-weight: 500;
     font-size: 16px;
     color: #222;
-
 }
 
 .filters li a:hover {
@@ -295,57 +264,169 @@ section {
 }
 
 .filters button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 132px;
-    float: right;
     padding: 13px 25px;
     border-radius: 12px;
     border: 1px solid #d8d8d8;
-
     font-weight: 500;
     font-size: 16px;
     color: #222;
-    position: relative;
     cursor: pointer;
 }
 
-.filters img {
-    float: left;
-}
-
-.filters span {
-    display: inline-block;
-    position: absolute;
-    left: 60px;
-}
-
 .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
-    padding-top: 5px;
+    margin-top: 10px;
 }
 
 .card_1 {
-    display: inline-block;
     width: 289px;
     height: 278px;
-    position: relative;
-    top: 0px;
-    margin: 0 25px 40px 0;
+    cursor: pointer;
 }
 
 .card_1 img {
     width: 289px;
-    height: 210px;  
+    height: 210px;
 }
 
 .card_1 span {
     display: block;
-    margin-top: 29px;
     padding-left: 30px;
     font-weight: 500;
     font-size: 18px;
+    color: #222;
+}
+
+.load_more {
+    width: 290px;
+    height: 56px;
+    border-radius: 12px;
+    background: #f2f2f2;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #222;
+    border: none;
+    margin-left: 505px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.top_designers {
+    height: 500px;
+    background: #fafafa;
+    margin-top: 105px;
+    padding: 32px 180px;
+}
+
+.top_designers h2 {
+    font-weight: 300;
+    font-size: 32px;
     text-align: left;
     color: #222;
 }
+
+.designers {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+    height: 275px;
+}
+
+.designer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.designer span {
+    display: block;
+    text-align: center;
+}
+
+.designer .up {
+    font-weight: 500;
+    font-size: 16px;
+    color: #222;
+}
+
+.designer .down {
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    color: #222;
+    opacity: 0.6;
+}
+
+.designer button {
+    width: 132px;
+    height: 44px;
+    border-radius: 12px;
+    background: transparent;
+    border: 1px solid #d8d8d8;
+    cursor: pointer;
+}
+
+.designer button:hover {
+    width: 132px;
+    height: 44px;
+    background: #f2f2f2;
+}
+
+footer {
+    padding: 35px 325px 0 180px;
+}
+
+.footer_text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    width: 1094px;
+    height: 398px;
+    background: transparent;
+}
+
+.footer_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_info span {
+    display: block;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: left;
+    color: #222;
+    margin-bottom: 36px;
+}
+
+.footer_info a {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: left;
+    color: #222;
+    text-decoration: none;
+}
+
+.brands {
+    margin-top: 41px;
+}
+
+
+
+ 
 
 
 
