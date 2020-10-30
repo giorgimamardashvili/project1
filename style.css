@@ -286,6 +286,7 @@ hr {
 }
 
 .card_1 {
+    position: relative;
     width: 289px;
     height: 278px;
     cursor: pointer;
@@ -302,6 +303,28 @@ hr {
     font-weight: 500;
     font-size: 18px;
     color: #222;
+}
+
+.hover {
+    height: 80px;
+    width: 34px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    justify-content: space-between;
+    top: 40px;
+    left: 40px;
+}
+
+.card_1:hover > .hover {
+    display: flex;
+}
+
+
+
+.hover img {
+    height: 24px;
+    width: 24px;
 }
 
 .load_more {
