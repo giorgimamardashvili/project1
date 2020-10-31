@@ -149,7 +149,7 @@ header {
     border-radius: 12px;
     border-style: none;
     background: #f8f8f8;
-    padding: 16px 20px;
+    padding: 16px 50px 16px 20px;
     font-weight: 500;
     font-size: 14px;
     text-align: left;
@@ -162,7 +162,7 @@ header {
     height: 56px;
     border-radius: 12px;
     border-style: none;
-    background: #f8f8f8 url(./Resources/img/icons/Search.png) center no-repeat;
+    background: url(./Resources/img/icons/Search.png) center no-repeat;
     position: absolute;
     cursor: pointer;
     right: 0;
@@ -306,14 +306,14 @@ hr {
 }
 
 .hover {
-    height: 80px;
+    height: 60px;
     width: 34px;
     display: none;
     flex-direction: column;
     position: absolute;
     justify-content: space-between;
     top: 40px;
-    left: 40px;
+    left: 50px;
 }
 
 .card_1:hover > .hover {
@@ -447,8 +447,40 @@ footer {
     margin-top: 41px;
 }
 
+footer hr {
+    margin-top: 70px;
+    width: 1231px;
+    height: 1px;
+    background: #111;
+    opacity: 0.05;
+    margin-left: 0;
+}
 
+.smart_academy {
+    width: 1235px;
+    height: 24px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
 
+.smart_academy img {
+    cursor: pointer;
+}
+
+.con_imgs {
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.smartAcademy {
+    font-weight: 900;
+    font-size: 16px;
+    color: #222;
+
+}
  
 
 
