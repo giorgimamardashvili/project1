@@ -631,6 +631,18 @@ footer img {
     .right_side {
         justify-content: space-around;
     }
+
+    .choosing{
+        padding: 0 5px;
+    }
+
+    .card_1 span {
+        font-size: 12px;
+    }
+
+    .load_more {
+        width: 70%;
+    }
 }
 
 
