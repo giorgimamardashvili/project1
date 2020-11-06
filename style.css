@@ -643,6 +643,14 @@ footer img {
     .load_more {
         width: 70%;
     }
+
+    .contact{
+        padding: 70px 5px 0 5px;
+    }
+
+    .contact_info span {
+        font-size: 10px;
+    }
 }
 
 
