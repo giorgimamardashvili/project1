@@ -555,7 +555,7 @@ footer img {
 
 @media screen and (max-width: 900px) {
     header {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
 
@@ -594,6 +594,14 @@ footer img {
     .cards {
         justify-content: center;
     }
+
+    .contact_info a {
+        font-size: 12px;
+    }
+
+    .contact_info span {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -603,6 +611,25 @@ footer img {
 
     .contact_info span {
         font-size: 12px;
+    }
+
+    .search {
+        width: 70%;
+    }
+
+    .right_side {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .designers{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .right_side {
+        justify-content: space-around;
     }
 }
 
