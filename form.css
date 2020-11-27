@@ -238,6 +238,7 @@ hr {
 .wrapper {
   display: flex;
   padding: 70px 188px 130px 182px;
+  justify-content: space-between;
 }
 
 .form_wrapper {
@@ -264,13 +265,13 @@ hr {
   color: #afafaf;
 }
 
-form {
+.form {
   display: flex;
   flex-direction: column;
   margin-top: 35px;
 }
 
-form label {
+.form label {
   margin-top: 25px;
   font-weight: 500;
   font-size: 18px;
@@ -278,13 +279,13 @@ form label {
   color: #afafaf;
 }
 
-form input {
+.form input {
   height: 60px;
   border-radius: 0.5px;
   border-style: none none solid none;
 }
 
-form button {
+.form button {
   width: 289px;
   height: 60px;
   border-radius: 12px;
@@ -296,6 +297,13 @@ form button {
   line-height: 22.4px;
   text-align: center;
   color: #fff;
+}
+
+.picture {
+  width: 600px;
+  height: 660px;
+  border-radius: 30px;
+  background: #ffc3de;
 }
 
 .contact {
