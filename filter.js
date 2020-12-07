@@ -15,7 +15,7 @@ function sort() {
 
     buttons.forEach((button) => {
         button.addEventListener('click', () => {
-            const currentCategory = button.classList;
+            const currentCategory = button.dataset.filter;
             filter(currentCategory, cards);
         });
     });
